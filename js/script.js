@@ -6,28 +6,26 @@ Usiamo i nuovi metodi degli array foreach o filter.*/
 /*--------- METODO FILTER --------- */
 
 const filterNumbers = (array, a , b) => {
-    let newarray = array.filter((element, index)=>{
+    let newArray = array.filter((element, index)=>{
         if ( index >= a -1 && index < b){
            return element
         }
     
     });
 
-    return newarray
+    return newArray
 }
 
 const numbers = [2,11,6,77,3,4,9];
-let from = 1
-let to = 3
+let from = 1;
+let to = 3;
 
-const newNumber = filterNumbers (numbers, 1, 3)
+const newNumber = filterNumbers (numbers, 1, 3);
 
 console.log(newNumber);
 
 
 /*--------- METODO FOREACH --------- */
-
-const numbers2 = [4,17,9,44,54,2,7]
 
 const forEachNumbers = ( array, a , b) => {
 
@@ -41,6 +39,8 @@ const forEachNumbers = ( array, a , b) => {
 
     return newArray;
 }
+
+const numbers2 = [4,17,9,44,54,2,7];
 
 const newnumbers2 = forEachNumbers (numbers2, 1, 3);
 
